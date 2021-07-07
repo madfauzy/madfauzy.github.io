@@ -2,9 +2,23 @@ body {
     margin-top: 30px;
 }
 
+.jumbotron {
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
 .jumbotron img {
     width: 200px;
-    border: 5px solid grey;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about {
@@ -19,6 +33,23 @@ hr {
     border-top: 3px solid grey;
 }
 
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 5s;
+}
+
+.pKanan {
+    transform: translate(50px, 0);
+}
+
+.pKiri.pShow,
+.pKanan.pShow {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .portfolio {
     min-height: 600px;
     background-image: url(../img/wave2.svg), url(../img/wave1.svg);
@@ -28,6 +59,17 @@ hr {
 
 .portfolio img {
     height: 200px;
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.5s;
+}
+
+.portfolio .thumbnail.show {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .contact {
