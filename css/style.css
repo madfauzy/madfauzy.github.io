@@ -1,10 +1,18 @@
+body {
+    margin-top: 30px;
+}
+
 .jumbotron img {
     width: 200px;
     border: 5px solid grey;
 }
 
+.about {
+    min-height: 400px;
+}
+
 .portfolio {
-    min-height: 800px;
+    min-height: 600px;
 }
 
 hr {
