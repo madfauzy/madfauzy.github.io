@@ -4,7 +4,7 @@ $('.page-scroll').on('click', function(e){
     let elemenTujuan = $(tujuan);
 
     $('html').animate({
-        scrollTop: elemenTujuan.offset().top - 40
+        scrollTop: elemenTujuan.offset().top - 50
     }, 1000)
 
     e.preventDefault();
