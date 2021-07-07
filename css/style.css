@@ -9,10 +9,16 @@ body {
 
 .about {
     min-height: 400px;
+    background-image: url(../img/wave1.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .portfolio {
     min-height: 600px;
+    background-image: url(../img/wave2.svg);
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 hr {
