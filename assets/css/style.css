@@ -1,0 +1,38 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-white-50 {
+  color: #adb5bd !important;
+}
+
+.min-h {
+  min-height: 90px;
+}
+
+a .card:hover {
+  scale: 1.01;
+  transition: 0.3s;
+  border-color: red;
+}
+
+@media (max-width: 576px) {
+  .min-h {
+    min-height: 100%;
+  }
+
+  h1.fs-3 {
+    font-size: 1.2em !important;
+  }
+
+  h2.fs-5,
+  h3.fs-5,
+  h4.fs-5,
+  h3.fs-4 {
+    font-size: 1em !important;
+  }
+
+  footer {
+    font-size: 0.9em !important;
+  }
+}
