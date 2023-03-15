@@ -16,7 +16,7 @@ a .card:hover {
   border-color: red;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .min-h {
     min-height: 100%;
   }
