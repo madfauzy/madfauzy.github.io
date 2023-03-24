@@ -11,7 +11,6 @@ body {
 }
 
 a .card:hover {
-  scale: 1.01;
   transition: 0.3s;
   border-color: red;
 }
