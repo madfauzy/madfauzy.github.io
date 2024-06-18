@@ -1,0 +1,90 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-white-50 {
+  color: #adb5bd !important;
+}
+
+.min-h {
+  min-height: 90px;
+}
+
+a .card:hover {
+  transition: 0.3s;
+  border-color: red;
+}
+
+@media screen and (max-width: 576px) {
+  .min-h {
+    min-height: 100%;
+  }
+
+  h1.fs-3 {
+    font-size: 1.2em !important;
+  }
+
+  h2.fs-5,
+  h3.fs-5,
+  h4.fs-5,
+  h3.fs-4 {
+    font-size: 1em !important;
+  }
+
+  footer {
+    font-size: 0.9em !important;
+  }
+}
+
+.navbar-brand .logo {
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/logo-1.png');
+  background-size: cover;
+  animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+  0%,
+  100% {
+    background-image: url('../img/logo-1.png');
+  }
+  50% {
+    background-image: url('../img/logo-2.png');
+  }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
